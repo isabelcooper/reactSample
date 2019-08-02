@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My First React App
         </p>
         <a
           className="App-link"
@@ -18,6 +18,13 @@ function App() {
         >
           Learn React
         </a>
+        <form onSubmit={console.log("Hello")}>
+          <label>
+            To Do:
+            <input type="text"/>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
       </header>
     </div>
   );
